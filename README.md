@@ -13,7 +13,7 @@ ez-localizr accounts for Unicode issues using `ftfy`, and loads string definitio
 I recommend using 'L' because helps to keep typing to a minimum, but you can use whatever variable name you'd like.
 
 ```python
-import ezlocalizr
+from ezlocalizr import ezlocalizr
 L = ezlocalizr(language='en_US', string_path: 'strings', default_lang='en_US')
 
 text = L('test')
@@ -27,7 +27,7 @@ Output: `Hello World!`
 ez-localizr will only be able to display strings in languages that are in your string folder. If you have multiple, and would like to change it, call the `load_lang()` function. An example is listed below!
 
 ```python
-import ezlocalizr
+from ezlocalizr import ezlocalizr
 L = ezlocalizr(language='en_US', string_path='strings', default_lang='en_US')
 
 L.load_lang('fr_FR')
@@ -38,7 +38,7 @@ If you use this in tkinter, you will need to destroy the window and reinitialize
 ## Get a list of all available languages
 
 ```python
-import ezlocalizr
+from ezlocalizr import ezlocalizr
 L = ezlocalizr(language='en_US', string_path='strings', default_lang='en_US')
 
 language_list = L.lang_list
