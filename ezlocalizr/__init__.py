@@ -1,0 +1,1 @@
+from .ezlocalizr import ezlocalizr
