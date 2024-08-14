@@ -14,7 +14,11 @@ I recommend using 'L' because helps to keep typing to a minimum, but you can use
 
 ```python
 from ezlocalizr import ezlocalizr
-L = ezlocalizr(language='en_US', string_path: 'strings', default_lang='en_US')
+L = ezlocalizr(
+  language='en_US',
+  string_path='strings',
+  default_lang='en_US'
+)
 
 text = L('test')
 
@@ -28,7 +32,11 @@ ez-localizr will only be able to display strings in languages that are in your s
 
 ```python
 from ezlocalizr import ezlocalizr
-L = ezlocalizr(language='en_US', string_path='strings', default_lang='en_US')
+L = ezlocalizr(
+  language='en_US',
+  string_path='strings',
+  default_lang='en_US'
+)
 
 L.load_lang('fr_FR')
 ```
@@ -39,7 +47,11 @@ If you use this in tkinter, you will need to destroy the window and reinitialize
 
 ```python
 from ezlocalizr import ezlocalizr
-L = ezlocalizr(language='en_US', string_path='strings', default_lang='en_US')
+L = ezlocalizr(
+  language='en_US',
+  string_path='strings',
+  default_lang='en_US'
+)
 
 language_list = L.lang_list
 print(language_list)
